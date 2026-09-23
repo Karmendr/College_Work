@@ -16,11 +16,18 @@ void displayLinkList(struct Node* head)
         printf("%d ",temp->info);
         temp = temp->next;
     }
+    printf("\n");
 }
 
-void insertAtEnd(struct Node *temp)
+void insertAtEnd(struct Node *temp1, struct Node *temp2)
 {
-    
+    while(temp1->next != NULL)
+    {
+        temp1 = temp1->next;
+    }
+
+    temp1->next = temp2;
+    temp2->next = NULL;
 }
 
 int main()
@@ -46,12 +53,14 @@ int main()
     fourth->info = 10;
     fourth->next = NULL;
 
+    displayLinkList(head);
+
     // Insering a Node at begining
     struct Node *temp2 = (struct Node *)malloc(sizeof(struct Node));
     temp2->info = 2;
-    temp2->next = head;
-    head = temp2;
+    temp1 = head;
 
+    insertAtEnd(temp1,temp2);
     displayLinkList(head);
          
     return 0;
