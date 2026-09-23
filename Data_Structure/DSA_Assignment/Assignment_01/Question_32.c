@@ -1,0 +1,18 @@
+// C/C++ program to find sum=1+3+5+….
+
+#include<stdio.h>
+
+void main()
+{
+    int n;
+    printf("Enter a number :- ");
+    scanf("%d",&n);
+
+    int sum = 0;
+
+    for(int i = 1; i <= n; i+=2)
+    {
+        sum += i;
+    }
+    printf("Sum :- %d",sum);
+}

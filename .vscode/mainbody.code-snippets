@@ -1,0 +1,20 @@
+{
+    "My C Program": {
+        "scope": "c",
+        "prefix": "mainbody",
+        "body": [
+            "#include<stdio.h>",
+            "",
+            "int main()",
+            "{",
+            "    /*",
+            "       Author : Karmendra Deval",
+            "       Roll Number : Y26271015",
+            "    */",
+            "",
+            "    return 0;",
+            "}"
+        ],
+        "description": "My basic C program"
+    }
+}
