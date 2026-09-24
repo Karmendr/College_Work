@@ -41,7 +41,9 @@ int main()
     fourth->next = NULL;
 
     // Delete a Node at begining
-    head = head->next;
+    struct Node *temp = head;
+    head = temp->next;
+    free(temp);
 
     displayLinkList(head);
          
