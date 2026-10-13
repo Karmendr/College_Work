@@ -26,13 +26,13 @@ void insertAtEnd()
     if(arr[max-1]==0)
     {
         arr[max-1] = n;
-        printf("Element inserted!");
+        printf("Element inserted!\n");
     }
     else
         printf("Overflow!");
 }
 
-void insertArIndex()
+void insertAtIndex()
 {
     int x,pos;
     printf("Enter Element : ");
@@ -84,7 +84,7 @@ void main()
                 insertAtEnd();
                 break;
             case 3:
-                insertArIndex();
+                insertAtIndex();
                 break;
             case 4:
                 display();
